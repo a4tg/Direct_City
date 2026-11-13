@@ -1,0 +1,17 @@
+services:
+  db:
+    image: postgres:17
+    environment:
+      POSTGRES_USER: pryamogorod
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD}
+      POSTGRES_DB: pryamogorod
+    ports:
+      - "127.0.0.1:55432:5432"
+    volumes:
+      - world-postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U pryamogorod"]
+      interval: 3s
+      retries: 15
+volumes:
+  world-postgres:

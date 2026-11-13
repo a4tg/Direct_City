@@ -1,0 +1,228 @@
+{
+  "date": "2026-11-11",
+  "label": "phase-1-verified",
+  "gitRepository": false,
+  "tests": {
+    "server": 14,
+    "saveSelection": 7,
+    "behavior": 16
+  },
+  "files": [
+    {
+      "path": ".env.example",
+      "sha256": "d9f631887c68e801b4c5c2ce75e2fb447d51bb241b1a1cebb55f3489f4029636"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "80f0739581c2c3ae708f2f86bf0a1b9da9ad5be96c0159a8c52add25aacf18fc"
+    },
+    {
+      "path": "compose.yaml",
+      "sha256": "f945ed68dfd720a6e042ec4731ba9c5ccd6d92d2d973cf1023b061fa644d9605"
+    },
+    {
+      "path": "docs/phase-1-verification.md",
+      "sha256": "4c0f37b4d0d33a02e5cd197c1308255d792f575edda8437e6585271c8a067582"
+    },
+    {
+      "path": "index.html",
+      "sha256": "6ded14d68bc835deb192a94be39bfb6b41f6ad07a62be261c7bd74218c09a4c3"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "ba783344b477ef6f08195c09f9aef279b099615e440a4ae618295cfeff971577"
+    },
+    {
+      "path": "package.json",
+      "sha256": "c3ba6b9e37f624dd8b50944ebd9d958c3574a59588d0f826af4a5a9a8cdc8030"
+    },
+    {
+      "path": "README.md",
+      "sha256": "9d09dbd74931cb7ca09467ef17872292721f2a5be266551dd2eb98f33f10d92e"
+    },
+    {
+      "path": "scripts/build-server.mjs",
+      "sha256": "5d8b1f17a83da5026d5a82e4e81088950d138f9c8551e6693b41796864ec5fb6"
+    },
+    {
+      "path": "scripts/dev.mjs",
+      "sha256": "2dff6018320c78684ff659d79320feccd5d984c244dc119da670858d542f962d"
+    },
+    {
+      "path": "server/app.ts",
+      "sha256": "e3d29a0e9bc77ee17c6bda84ac431964083abc54937438dada8a133158a4153c"
+    },
+    {
+      "path": "server/catalog.ts",
+      "sha256": "1b127c61ea7260ee53ba760ae7f717364b5c89ad54f2c1b2eb1e7313af893a29"
+    },
+    {
+      "path": "server/content/catalog.json",
+      "sha256": "3ea488582d7f1366d520337537e008b77220c056e46710c4be90f84c83a9ea8c"
+    },
+    {
+      "path": "server/db.ts",
+      "sha256": "997830d79a60d39a2ee075f40ca8947075b31ec88802a755f6e39686d0ee0d94"
+    },
+    {
+      "path": "server/migrate.ts",
+      "sha256": "57d921aa282f857fb3160fe34e756b64814426eca25ee048aa3f846114102b7b"
+    },
+    {
+      "path": "server/migrations/001_world.sql",
+      "sha256": "f283c89109052e9337e69ad9a004ef69d83db934a60295a2697c7c7c8220760f"
+    },
+    {
+      "path": "server/seed.ts",
+      "sha256": "9d98c9991c73133a51097e634e7900b2a556d9bc70ea7860422fe623f782941d"
+    },
+    {
+      "path": "server/start.ts",
+      "sha256": "909b0c24a50f26bb2d27787b30eba71dfd1512f1d870264200b3bb65c479c8ec"
+    },
+    {
+      "path": "server/tests/world.test.ts",
+      "sha256": "8da764025aa2411f48ce69082412d5bf0539282b9a4d7a47440961b1d74cdf7d"
+    },
+    {
+      "path": "server/world.ts",
+      "sha256": "702f199fa85c26d842f573db048517b953d658db57dc378f00c2c318b946d715"
+    },
+    {
+      "path": "src/city/api.ts",
+      "sha256": "4d957d7f0cf50a0f04f1739406b4edcd97b5884666495c5131c54cd49d627e37"
+    },
+    {
+      "path": "src/city/city.css",
+      "sha256": "966285bc7fbc6a2445d6fda6244d46415887e0216a571d61e4978c8a0d558f90"
+    },
+    {
+      "path": "src/city/CityApp.tsx",
+      "sha256": "da20b4f79af444ba1f810faa08a0302cfa5a95d63a827c3525b53d2a0f84f2d0"
+    },
+    {
+      "path": "src/city/Collection.tsx",
+      "sha256": "21c60b598ae5066a6097e6f69a075305dca7102805c0bc8645e8a79d82bd147c"
+    },
+    {
+      "path": "src/city/DevTools.tsx",
+      "sha256": "295304306464c05f6f8d36868cca99fee8d5323c8fef831a70ff13b1549d9886"
+    },
+    {
+      "path": "src/city/modules/MeikuAdapter.tsx",
+      "sha256": "cf20c6a4924f75f6c595163dfce225174e8a525d9cb058244ae3cdf1033fe4c0"
+    },
+    {
+      "path": "src/city/modules/meikuSync.ts",
+      "sha256": "7a0908497e6ecd9cb6bd3e4bf3174e90dfd1b31b708142249601fbd28e9562f1"
+    },
+    {
+      "path": "src/city/modules/registry.ts",
+      "sha256": "1f8c6f24e54c97fa8f06fd3446a6b072887f22ec19dea65087b7fdadc730c0a6"
+    },
+    {
+      "path": "src/city/ModuleScreen.tsx",
+      "sha256": "71a9b1c6c6328074b22b79413f190b47cec85784533bfacd724ba6c233f5e39f"
+    },
+    {
+      "path": "src/city/QRScanner.tsx",
+      "sha256": "c5f97e28cbbadf00d6c55a859d63906f91e26b0fd142eb5c8571ef644443568b"
+    },
+    {
+      "path": "src/city/Story.tsx",
+      "sha256": "ab698b7b25b364ee483fa546ee1080c3b8af9b414fde4b8466af5cc8ebd14037"
+    },
+    {
+      "path": "src/city/types.ts",
+      "sha256": "5bccfcfbd64e2f2d5dc7a3791ba77df59ca6b9990d123344bc7ddf17f1e9f05d"
+    },
+    {
+      "path": "src/city/WorldMap.tsx",
+      "sha256": "8f40cd2259ca110e5230cb26ecda9295e781996b5de106319819ce4409382ff1"
+    },
+    {
+      "path": "src/game/animation.ts",
+      "sha256": "c6fe161c22825b1e1c807eade4bf47198ceae6151479632199a2c0c9775a003e"
+    },
+    {
+      "path": "src/game/autonomy.ts",
+      "sha256": "29318c3e00ea0af89ee3be951fedbb74c171670624f09c5a2e5580ce230d1c7c"
+    },
+    {
+      "path": "src/game/balance.ts",
+      "sha256": "85b7b946fc3213688981380df9a55942dbcae3b4cf49019283ddcd4d3dd16024"
+    },
+    {
+      "path": "src/game/behavior.ts",
+      "sha256": "80ccef625911ff69b1de34b8c3331d04c13b172733acc8fe6326eb416084a8d5"
+    },
+    {
+      "path": "src/game/personality.ts",
+      "sha256": "499aa7203d5549fcedeed3948cf99b54710b664f4c74c60981df320bfef79cd7"
+    },
+    {
+      "path": "src/game/save.ts",
+      "sha256": "aa8df339a6b7c0601b1e47958ef32c7a1ee0fdd8bb5aa0ee53a291ab892d85e7"
+    },
+    {
+      "path": "src/game/store.ts",
+      "sha256": "a8f2f8acdbd2d583464552f9096677fd1d61cec68e77678e7111304064e5a7c1"
+    },
+    {
+      "path": "src/game/upgrades.ts",
+      "sha256": "83f3eeea4ff1d765f80ce915750eca85c38d74d28f860c1cb00f9e4b2b1d9c9a"
+    },
+    {
+      "path": "src/main.tsx",
+      "sha256": "b9b6d6200a442c94e46049b444762b08269bf77fe21f18ce0d4995fb318930e2"
+    },
+    {
+      "path": "src/modules/meiku/MeikuGame.tsx",
+      "sha256": "f719d24ef21bb876b04e5269dfc8cbfe1f81f9b71ad99196fc57c2e5ee395c0d"
+    },
+    {
+      "path": "src/Room.tsx",
+      "sha256": "d3948ae646f1aba626a3dd60f908c793b316a296bf854a4cea6a4a1e9943e56f"
+    },
+    {
+      "path": "src/room001.ts",
+      "sha256": "9d3804b55d93383018ce56f36c0120224266818af19f44d890ddaeca51126b53"
+    },
+    {
+      "path": "src/Shop.tsx",
+      "sha256": "0fe85cce80c5a5827f9f6a4b6e0c287d1a87b07e64eefc1ef867ce4b24ac0037"
+    },
+    {
+      "path": "src/style.css",
+      "sha256": "7f45fa107e8963d737734c21eb265efd121e615e2e5b681f0d562cdc7366ddcd"
+    },
+    {
+      "path": "tests/behavior.test.mjs",
+      "sha256": "d784782857ba54d263d1ea8281f9f2ae79379248a3e43b03425511c4c39fd261"
+    },
+    {
+      "path": "tests/meiku-sync.test.ts",
+      "sha256": "92fee306d253108b5d3372d9d6652ec99f9b752cef54a627ad2c01761ba78e02"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "db985fa46c96ca72aecbd323b194a8089d7e41ec69b7ce0f9d69414d3e13dbf2"
+    },
+    {
+      "path": "tsconfig.server.build.json",
+      "sha256": "75a0b8fddbcf4c589bc2c4c479531dd77e5d7cefd7c4d20281d9068d904a7042"
+    },
+    {
+      "path": "tsconfig.server.json",
+      "sha256": "5cde813ffd00ac2d6e481c44c8c08852ca4cafc6d798834c7022287728b610f4"
+    },
+    {
+      "path": "tsconfig.test.json",
+      "sha256": "107a82e808b41c99502877d7e131863b53ee13341cb7d653c3872cbaadf102a0"
+    },
+    {
+      "path": "vite.config.ts",
+      "sha256": "499ca596f73163506bba2ea437e546cdd962feadb91c36db21d9e96d2e9ff965"
+    }
+  ]
+}

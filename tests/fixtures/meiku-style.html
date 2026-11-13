@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru"><meta charset="utf-8"><title>Проверка изоляции стилей Мэйку</title>
+<script>
+const cityFirst=new URLSearchParams(location.search).get('order')!=='meiku-first';
+for(const href of cityFirst?['/src/city/city.css','/src/style.css']:['/src/style.css','/src/city/city.css']){
+ const link=document.createElement('link');link.rel='stylesheet';link.href=href;document.head.append(link);
+}
+</script>
+<style>.city-main{padding:16px}.app{min-height:0}.room{height:180px;aspect-ratio:auto}.room button{position:static;width:50px;height:45px;translate:none}.fixture-results{white-space:pre-wrap;padding:16px;font:14px monospace}</style>
+<body><h1>Проверка изоляции стилей Мэйку</h1>
+<div class="city-main">
+<button id="city-control">Городская кнопка</button>
+<div class="meiku-module">
+ <div class="module-save"><button id="save-control">Сохранить</button></div>
+ <div class="app"><section class="room">
+  <button class="kitten" id="kitten">Мэйку</button>
+  <button class="room-prop bulb" id="bulb">Свет</button>
+  <button class="room-prop toy" id="toy">Игрушка</button>
+  <button class="room-prop bed-action" id="bed">Лежанка</button>
+  <button class="tidy" id="tidy">Миска</button>
+ </section><div class="care"><button id="care">Погладить</button></div></div>
+</div></div>
+<pre class="fixture-results" role="status">Проверяем…</pre>
+<script>
+addEventListener('load',()=>{
+ const errors=[],results=[];
+ const expect=(ok,label)=>{results.push((ok?'ПРОЙДЕНО: ':'ОШИБКА: ')+label);if(!ok)errors.push(label);};
+ for(const disabled of [false,true])for(const id of ['kitten','bulb','toy','bed','tidy']){
+  const el=document.getElementById(id);el.disabled=disabled;const c=getComputedStyle(el),label=id+(disabled?' (недоступна)':'');
+  expect(c.backgroundColor==='rgba(0, 0, 0, 0)'&&c.borderTopWidth==='0px'&&c.opacity==='1',label+': прозрачный фон, без рамки и общего затухания');
+  if(id!=='bed')expect(c.paddingTop==='0px'&&c.paddingLeft==='0px',label+': без городских отступов');
+ }
+ expect(getComputedStyle(document.getElementById('city-control')).backgroundColor==='rgb(245, 226, 236)','Городская кнопка сохранила оформление');
+ expect(getComputedStyle(document.getElementById('save-control')).backgroundColor==='rgb(245, 226, 236)','Кнопка серверного сохранения сохранила оформление');
+ expect(getComputedStyle(document.getElementById('care')).backgroundColor==='rgb(248, 216, 231)','Кнопка ухода сохранила родной стиль');
+ const out=document.querySelector('[role=status]');out.textContent=(errors.length?'ОШИБКИ: '+errors.length:'ВСЕ 21 ПРОВЕРКА ПРОЙДЕНЫ')+'\n'+(cityFirst?'Сначала город, затем Мэйку':'Сначала Мэйку, затем город')+'\n'+results.join('\n');
+ out.dataset.result=errors.length?'fail':'pass';
+});
+</script></body></html>

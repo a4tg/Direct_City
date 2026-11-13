@@ -1,0 +1,42 @@
+{
+  "name": "meiku-world",
+  "version": "0.4.0",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "tsc -p tsconfig.test.json && node --test tests/behavior.test.mjs && tsx --test tests/meiku-sync.test.ts tests/klimych.test.ts tests/map.test.ts && tsx --test tests/map-visuals.test.tsx && node --test tests/map-assets.test.mjs tests/meiku-style.test.mjs",
+    "server": "node --env-file-if-exists=.env --import tsx server/start.ts",
+    "db:migrate": "node --env-file-if-exists=.env --import tsx server/migrate.ts",
+    "db:seed": "node --env-file-if-exists=.env --import tsx server/seed.ts",
+    "typecheck:server": "tsc -p tsconfig.server.json",
+    "test:server": "tsx --test server/tests/world.test.ts server/tests/klimych.test.ts server/tests/map-geography.test.ts",
+    "dev:server": "node --env-file-if-exists=.env --import tsx --watch server/start.ts",
+    "catalog:import": "node --env-file-if-exists=.env --import tsx server/seed.ts",
+    "dev:client": "vite",
+    "build:server": "node scripts/build-server.mjs",
+    "start:server": "node --env-file-if-exists=.env server-dist/start.js",
+    "map:sync": "node --env-file-if-exists=.env scripts/sync-map-assets.mjs",
+    "map:layout": "node --import tsx scripts/apply-map-layout.ts"
+  },
+  "type": "module",
+  "dependencies": {
+    "fastify": "^5.12.8",
+    "pg": "^8.23.1",
+    "qrcode": "^1.5.4",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "zustand": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "@types/pg": "^8.23.1",
+    "@types/qrcode": "^1.5.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.8"
+  }
+}

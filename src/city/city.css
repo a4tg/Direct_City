@@ -1,0 +1,85 @@
+*{box-sizing:border-box}
+body{margin:0;background:#eee8ed;color:#4b3547;font-family:system-ui,sans-serif}
+.city-shell{max-width:900px;min-height:100dvh;margin:auto;background:#fff9f4;display:flex;flex-direction:column}
+.city-header{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:18px 16px;background:#fff9f4;border-bottom:1px solid #e8dce5}
+.city-logo{font-size:1.45rem;font-weight:850;text-align:left;border:0;background:none;color:#603e59;padding:0}
+.city-logo span{display:block;font-size:.66rem;font-weight:500;letter-spacing:.06em;margin-top:3px}
+.city-coins{background:#fbeac8;color:#755426;border:1px solid #ecd2a5;padding:8px 10px;border-radius:25px;font-weight:750;font-size:.85rem;overflow-wrap:anywhere}
+.city-main{padding:14px 14px 24px;flex:1;min-width:0}
+/* Shared city defaults do not style buttons inside the self-contained pet game. */
+.city-main button:where(:not(.meiku-module .app button)){font:inherit;color:inherit;min-height:44px;border-radius:12px;border:1px solid #dfcbd8;background:#f5e2ec;padding:9px 13px;cursor:pointer}
+.city-main button:where(:not(.meiku-module .app button)):disabled{cursor:default;opacity:.6}
+.city-main button:where(:not(.meiku-module .app button)):focus-visible,.city-nav button:focus-visible{outline:3px solid #846097;outline-offset:2px}
+.city-main h2{line-height:1.2}
+.city-main p{line-height:1.55}
+.eyebrow{font-size:.65rem;letter-spacing:.13em;font-weight:800;color:#92667f}
+.map-welcome{padding:14px 8px 24px;max-width:500px}
+.map-welcome h2{font-size:clamp(1.8rem,5vw,2.5rem);margin:12px 0}
+.map-welcome p{font-size:.88rem;color:#796474}
+.district{padding:14px;border:1px solid #d5c6d3;border-radius:22px;margin-bottom:13px;background:#e9e3ee}
+.district.revealed{background:#f0e8d9;border-color:#dcc9ac}
+.district-header{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:12px}
+.district h3{font-size:1rem;margin:0}
+.district small{font-size:.7rem}
+.buildings{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.city-main .building{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:119px;gap:4px;background:#d5cedd;border:1px dashed #b7a8bf;text-align:center;padding:10px 4px;opacity:1}
+.city-main .building.open{background:#fff8ee;border:1px solid #cfae81;box-shadow:0 3px 0 #d8c1a1}
+.building-mark{display:grid;place-items:center;width:36px;height:36px;border-radius:14px 14px 5px 5px;background:#b6a6c3;color:#fff;font-size:1.4rem;font-weight:700}
+.open .building-mark{background:#c8809b}
+.building strong{font-size:.78rem;overflow-wrap:anywhere}
+.building small{font-size:.65rem;color:#65576f}
+.map-caption{font-size:.72rem;color:#847283}
+.city-nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));padding:8px 10px max(8px,env(safe-area-inset-bottom));gap:6px;position:sticky;bottom:0;background:#fff9f4;border-top:1px solid #e8dce5;z-index:20}
+.city-nav button{font:inherit;min-height:44px;border:0;border-radius:12px;background:none;color:#685064;font-size:.8rem;font-weight:700}
+.city-nav button[aria-current]{background:#f3dce8;color:#793b5c}
+.field{display:flex;flex-direction:column;gap:5px;font-size:.8rem;margin:12px 0}
+.field select,.field input{font:inherit;max-width:100%;min-height:44px;padding:7px;border:1px solid #d6c5d5;border-radius:10px;background:#fff;color:#4b3547}
+.album{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.sticker{padding:9px;border:1px dashed #d8cbd8;border-radius:15px;background:#f3eef4;min-width:0}
+.sticker>div{height:90px;display:grid;place-items:center;background:#e6dfe9;border-radius:10px;color:#99829f;font-size:1.8rem;font-weight:800}
+.sticker img{max-width:100%;height:90px;object-fit:contain}
+.sticker strong,.sticker small{display:block;font-size:.75rem;margin-top:7px;overflow-wrap:anywhere}
+.sticker small{font-size:.65rem;color:#8e7589}
+.sticker.owned{border-style:solid;background:#fff1dd;border-color:#dfbf8a}
+.sticker.owned>div{background:#f4dfbc;color:#97713c}
+.city-message{padding:11px;border:1px solid #d7c1d2;border-radius:12px;background:#f5e6ef;font-size:.83rem}
+.city-message.error{background:#fae1e2;border-color:#d99b9f}
+.city-message button{margin-left:8px}
+.story-panel{text-align:center;padding:8px 4px 28px}
+.portrait{margin:20px auto;width:130px;height:130px;display:grid;place-items:center;border-radius:50%;background:#f1dbe7;border:1px solid #dfbfce;font-size:3.8rem;color:#9f6483}
+.portrait img{width:90%;height:90%;object-fit:contain}
+.dialogue{max-width:550px;margin:18px auto;font-size:1rem;min-height:90px}
+.answers{display:flex;justify-content:center;flex-wrap:wrap;gap:8px}
+.scanner video{width:100%;max-height:300px;border-radius:16px;background:#312432}
+.dev-tools{border:1px dashed #bda6bc;padding:12px;border-radius:14px;margin-top:20px;font-size:.8rem}
+.dev-tools summary{cursor:pointer;font-weight:700}
+.test-qr{display:flex;flex-direction:column;align-items:center;gap:10px;padding:12px 0}
+.test-qr img{max-width:100%;width:200px}
+.test-qr small{line-height:1.5}
+.module-save{font-size:.7rem;border:1px solid #dfccd7;border-radius:10px;padding:8px;margin:10px 0}
+.city-main .module-save button{font-size:.7rem;padding:5px 8px;margin-right:6px;min-height:36px}
+.meiku-module .app{box-shadow:none}
+.back-map{margin:4px 0}
+@media(min-width:600px){.world-map{display:grid;grid-template-columns:1fr 1fr;gap:13px}.map-welcome,.map-caption{grid-column:1/-1}.district{margin:0}.album{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+/* WORLD MAP UX 003–005: shared navigation, map-first shell. */
+body{background:#e8e6dd}
+.city-header{min-height:60px;padding:10px 18px;background:#fffaf0;border-bottom:1px solid #e5dfcf;gap:12px;padding-top:max(10px,env(safe-area-inset-top))}
+.city-logo{font-size:1.25rem;color:#53674e;letter-spacing:-.025em;line-height:1.1}
+.city-logo span{font-size:.55rem;color:#a2977f;letter-spacing:.06em;margin-top:3px}
+.city-coins{display:flex;align-items:center;gap:7px;background:#f7edcc;color:#8c743b;border:1px solid #e8d8a3;font-size:.8rem;padding:8px 12px;white-space:nowrap;max-width:48%;overflow:hidden;text-overflow:ellipsis}
+.city-shell.map-mode{max-width:1440px;background:#eef0e3}
+.map-mode .city-main{padding:0;flex:none}
+.map-mode .city-main>.dev-tools{margin:16px}
+.city-nav{min-height:72px;padding:5px 12px max(6px,env(safe-area-inset-bottom));gap:10px;background:#fffaf0f5;border-top:1px solid #e5dfcf;z-index:100;box-shadow:0 -4px 20px #3b4a3810}
+.city-nav button{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:4px;min-height:56px;font-size:10px;font-weight:750;color:#9a9e8d;border-radius:18px}
+.city-nav button svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.city-nav button[aria-current]{background:#edf0df;color:#5e7452}
+.city-nav button:last-child{background:#647c5b;color:#fffaf0;border:1px solid #58704e;box-shadow:0 3px 0 #465e3d44}
+.city-nav button:last-child[aria-current]{background:#516947}
+.city-nav button:disabled{opacity:.5;cursor:default}
+@media(min-width:1000px){.city-nav{grid-template-columns:repeat(3,150px);justify-content:center;gap:24px}.map-mode .map-frame{border-radius:0 0 24px 24px}}
+@media(max-width:599px){.city-header{padding-left:14px;padding-right:14px}.city-logo{font-size:1.2rem}.city-nav{gap:6px}.city-coins{font-size:.75rem}.city-shell{min-width:0;max-width:100%}}
+
+/* Keep city labels independent of the pet module's generic nav span rule. */
+.city-nav button>span{display:block;font-size:10px;line-height:1.15}

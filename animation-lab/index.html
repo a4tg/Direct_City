@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Мэйку · Animation Lab 001</title>
+<style>
+body{font:16px system-ui;color:#543445;background:#fff8f6;margin:20px auto;padding:0 14px;max-width:850px}
+fieldset{border:1px solid #dfb4bd;border-radius:12px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+button,select,input{font:inherit}button{min-height:40px}
+.views{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:14px}
+.stage{position:relative;aspect-ratio:360/470;overflow:hidden;border-radius:12px;background:#f5d8e7 url('/assets/room-001/processed/room_base.png') center bottom/cover}
+.stage img{position:absolute;left:50%;top:85%;width:40%;height:auto;translate:-50% -94%;object-fit:contain}
+.stage i{position:absolute;left:50%;top:85%;width:14px;height:14px;translate:-50% -50%;background:linear-gradient(#b41764,#b41764) center/100% 2px no-repeat,linear-gradient(#b41764,#b41764) center/2px 100% no-repeat}
+.source{background:#f3e3ed;display:grid;place-items:center}.source img{position:static;translate:none;width:100%;max-height:100%;object-fit:contain}
+small{display:block;margin-top:8px}
+</style>
+<h1>Лаборатория анимаций Мэйку</h1>
+<fieldset>
+<legend>Предпросмотр</legend>
+<label>Цикл <select id="clip"><option value="idle">Idle</option><option value="walk">Walk вправо</option><option value="sleep">Сон и пробуждение</option><option value="eating">Кормление</option><option value="grooming">Умывание</option><option value="mischief">Пакость</option></select></label>
+<button id="toggle">Пауза</button><button id="prev">← Кадр</button><button id="next">Кадр →</button>
+<label>FPS <input id="fps" type="number" min="1" max="30" value="10"></label>
+<label><input id="anchor" type="checkbox"> Точка опоры</label>
+<label><input id="travel" type="checkbox"> Движение вправо</label>
+</fieldset>
+<fieldset><legend>Пауза между событиями Idle, секунды</legend>
+<label>Моргание <input id="blink" type="number" min="1" max="60" value="4"></label>
+<label>Уши <input id="ear" type="number" min="1" max="60" value="8"></label>
+<label>Хвост <input id="tail" type="number" min="1" max="60" value="12"></label>
+</fieldset>
+<p id="frame" aria-live="off"></p>
+<div class="views">
+<section><h2>Исходный кадр</h2><div class="stage source"><img id="source" alt=""><p id="sourceMissing" hidden>Исходный кадр отсутствует</p></div></section>
+<section><h2>Игровой масштаб</h2><div class="stage" id="room"><img id="sprite" alt=""><i id="mark" hidden></i></div><small id="missing" hidden>Нормализованный кадр отсутствует.</small></section>
+</div>
+<script type="module">
+const get = id => document.getElementById(id);
+const events = { blink:[1,2,3,2,1], ear:[1,5,1], tail:[1,6,1] };
+const keys = Object.keys(events);
+const num = (id, max) => Math.min(max, Math.max(1, Number(get(id).value) || 1));
+const clip = get('clip');
+const count = () => clip.value === 'idle' ? 6 : 8;
+const forward = [1,2,3,4,5,6,7,8];
+const previewOrder = {
+  walk:forward, grooming:forward, mischief:forward,
+  sleep:[1,2,3,4,5,6,6,6,6,6,6,6,7,8],
+  eating:[1,2,3,4,5,4,5,6,7,8]
+};
+let cursor = 0;
+let frame = 1, playing = true, sequence = [], due = {}, last = performance.now();
+let travelStart = last;
+function schedule(time) {
+  due = Object.fromEntries(keys.map(key => [key, time + num(key,60)*1000]));
+  sequence = [];
+}
+function show() {
+  const name = clip.value + '_' + String(frame).padStart(2,'0') + '.png';
+  get('frame').textContent = 'Кадр ' + frame + ' из ' + count();
+  for (const [id, base, error] of [
+    ['source','/animation-lab/source/', 'sourceMissing'],
+    ['sprite','/assets/meiku/animations/', 'missing']
+  ]) {
+    const img = get(id);
+    img.onload = () => {img.hidden=false; get(error).hidden=true;};
+    img.onerror = () => {img.hidden=true; get(error).hidden=false;};
+    img.src = base + clip.value + '/' + name;
+  }
+}
+function play(value) {
+  playing = value;
+  get('toggle').textContent = value ? 'Пауза' : 'Воспроизвести';
+  last = performance.now(); travelStart = last; schedule(last);
+  if (value && clip.value === 'idle') { frame=1; show(); }
+}
+function step(delta) {
+  play(false);
+  frame = (frame - 1 + delta + count()) % count() + 1;
+  show();
+}
+get('prev').onclick = () => step(-1);
+get('next').onclick = () => step(1);
+get('toggle').onclick = () => play(!playing);
+clip.onchange = () => {cursor=0; frame=1; play(playing); show();};
+get('anchor').onchange = () => {get('mark').hidden=!get('anchor').checked;};
+for (const key of keys) get(key).onchange = () => schedule(performance.now());
+function tick(time) {
+  const walk = clip.value === 'walk';
+  const frameCycle = clip.value !== 'idle';
+  if (playing && time-last >= (frameCycle ? 1000/num('fps',30) : 95)) {
+    last=time;
+    const before=frame;
+    if(frameCycle) {
+      const order = previewOrder[clip.value];
+      cursor = (cursor + 1) % order.length;
+      frame = order[cursor];
+    }
+    else {
+      if(!sequence.length) {
+        const next=keys.filter(key=>due[key]<=time).sort((a,b)=>due[a]-due[b])[0];
+        if(next) {
+          sequence=[...events[next]];
+          due[next]=time+num(next,60)*1000+sequence.length*95;
+        }
+      }
+      frame=sequence.shift() ?? 1;
+    }
+    if(before!==frame) show();
+  }
+  const moving = walk && get('travel').checked;
+  if (!moving) travelStart=time;
+  if (!moving || playing) {
+    const x = moving ? 22 + ((time-travelStart)%2500)/2500*56 : 50;
+    get('sprite').style.left=x+'%';
+    get('mark').style.left=x+'%';
+  }
+  requestAnimationFrame(tick);
+}
+schedule(last); show(); requestAnimationFrame(tick);
+</script></html>

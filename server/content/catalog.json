@@ -1,0 +1,2878 @@
+{
+  "source": "https://docs.google.com/spreadsheets/d/1TxNsS-TW3leSR5OCi5EVtAcnHi0vz6L7/edit",
+  "capturedAt": "2026-11-11",
+  "districts": [
+    {
+      "id": "district-1",
+      "name": "Район 1",
+      "position": 0
+    },
+    {
+      "id": "district-2",
+      "name": "Район 2",
+      "position": 1
+    },
+    {
+      "id": "district-3",
+      "name": "Район 3",
+      "position": 2
+    },
+    {
+      "id": "district-4",
+      "name": "Район 4",
+      "position": 3
+    }
+  ],
+  "brands": [
+    {
+      "id": "meiku-neko",
+      "name": "MeikuNeko",
+      "mascot": "Мэйку-тян",
+      "archetype": "Пушистый чёрно-белый котёнок",
+      "personality": "Любопытный, ласковый, вредный, обожает картонные коробки",
+      "worldRole": "Мелкий вредный и милый котик, требует внимания",
+      "theme": "Костюмы для Мэйку",
+      "sourceRef": "Персонажи!A2:F2",
+      "building": {
+        "id": "building-meiku-neko",
+        "districtId": "district-1",
+        "position": 0,
+        "name": "Домик Мэйку",
+        "moduleId": "meiku",
+        "provisional": true
+      }
+    },
+    {
+      "id": "klimych",
+      "name": "КЛИМЫЧ",
+      "mascot": "Климыч",
+      "archetype": "Крепкий мужчина-хозяйственник",
+      "personality": "Суровый, практичный, прямолинейный, мастер на все руки",
+      "worldRole": "Бытовые катастрофы, хозяйство",
+      "theme": "Монохромные инструменты",
+      "sourceRef": "Персонажи!A3:F3",
+      "building": {
+        "id": "building-klimych",
+        "districtId": "district-2",
+        "position": 0,
+        "name": "Мастерская Климыча",
+        "moduleId": "klimych",
+        "provisional": true
+      }
+    },
+    {
+      "id": "ouborka",
+      "name": "Ou!borka",
+      "mascot": "ПOU!зырь",
+      "archetype": "Антропоморфный мыльный пузырь",
+      "personality": "Эмоциональный, суетливый, оптимистичный, боится лопнуть",
+      "worldRole": "Чистота, уборка, комедийные происшествия",
+      "theme": "Формы / альтер-версии ПOU!зыря",
+      "sourceRef": "Персонажи!A4:F4",
+      "building": {
+        "id": "building-ouborka",
+        "districtId": "district-2",
+        "position": 2,
+        "name": "Дом-бутылка ПOU!зыря",
+        "moduleId": "pending",
+        "provisional": true
+      }
+    },
+    {
+      "id": "petpower",
+      "name": "PETPOWER",
+      "mascot": "Мистер Хвост",
+      "archetype": "Антропоморфный пёс",
+      "personality": "Расслабленный, общительный, вечно на вайбе, любит приключения",
+      "worldRole": "Животные, прогулки, развлечения",
+      "theme": "Игрушки для собак",
+      "sourceRef": "Персонажи!A5:F5",
+      "building": {
+        "id": "building-petpower",
+        "districtId": "district-1",
+        "position": 1,
+        "name": "Дом-приют Мистера Хвоста",
+        "moduleId": "pending",
+        "provisional": true
+      }
+    },
+    {
+      "id": "multizavrik",
+      "name": "МУЛЬТИЗАВРИК",
+      "mascot": "Мультизаврик",
+      "archetype": "Фиолетовый мультяшный динозаврик",
+      "personality": "Наивный, весёлый, изобретательный, с богатым воображением",
+      "worldRole": "Детское творчество, игры, фантазия",
+      "theme": "Разные плюшевые динозаврики",
+      "sourceRef": "Персонажи!A6:F6",
+      "building": {
+        "id": "building-multizavrik",
+        "districtId": "district-4",
+        "position": 1,
+        "name": "Дино-игротека",
+        "moduleId": "pending",
+        "provisional": true
+      }
+    },
+    {
+      "id": "walnut",
+      "name": "WALNUT",
+      "mascot": "Финн фон Волнат",
+      "archetype": "Немецкий автомеханик и реставратор",
+      "personality": "Педантичный, дисциплинированный, одержимый качеством ремонта",
+      "worldRole": "Автомастерская, ремонт, восстановление",
+      "theme": "Предметы для реставрации / винтажные вещи",
+      "sourceRef": "Персонажи!A7:F7",
+      "building": {
+        "id": "building-walnut",
+        "districtId": "district-2",
+        "position": 1,
+        "name": "Столярная и автомастерская",
+        "moduleId": "pending",
+        "provisional": true
+      }
+    },
+    {
+      "id": "rastvor",
+      "name": "RASTVOR",
+      "mascot": "Агент Раствор",
+      "archetype": "Элитный спецагент в чёрном смокинге и очках",
+      "personality": "Невозмутимый, загадочный, профессиональный, немного пафосный",
+      "worldRole": "Секретные операции, сложные поручения",
+      "theme": "Шпионские гаджеты",
+      "sourceRef": "Персонажи!A8:F8",
+      "building": {
+        "id": "building-rastvor",
+        "districtId": "district-4",
+        "position": 3,
+        "name": "Шпионская штаб-квартира",
+        "moduleId": "pending",
+        "provisional": true
+      }
+    },
+    {
+      "id": "generalim",
+      "name": "Generalim",
+      "mascot": "Генералим-бот",
+      "archetype": "Бело-голубой робот-организатор",
+      "personality": "Системный, педантичный, командирский, добродушный",
+      "worldRole": "Порядок, организация, система заданий",
+      "theme": "Мини-роботы / модули-помощники",
+      "sourceRef": "Персонажи!A9:F9",
+      "building": {
+        "id": "building-generalim",
+        "districtId": "district-2",
+        "position": 3,
+        "name": "Фабрика чистоты",
+        "moduleId": "pending",
+        "provisional": true
+      }
+    },
+    {
+      "id": "yesmix",
+      "name": "YesMix",
+      "mascot": "Мисс ЙесМикс",
+      "archetype": "Антропоморфная малина в шоколаде",
+      "personality": "Эффектная, кокетливая, яркая, обожает эксперименты",
+      "worldRole": "Красота, косметика, тематические события",
+      "theme": "Различные десертные блюда",
+      "sourceRef": "Персонажи!A10:F10",
+      "building": {
+        "id": "building-yesmix",
+        "districtId": "district-4",
+        "position": 2,
+        "name": "Дом-кондитерская",
+        "moduleId": "pending",
+        "provisional": true
+      }
+    },
+    {
+      "id": "paw-factory",
+      "name": "Paw Factory",
+      "mascot": "Месье Пьер",
+      "archetype": "Французский стилист-перфекционист",
+      "personality": "Элегантный, эксцентричный, требовательный, театральный",
+      "worldRole": "Профессиональный уход за лицом, телом и волосами",
+      "theme": "“Атрибуты премиального салона”",
+      "sourceRef": "Персонажи!A11:F11",
+      "building": {
+        "id": "building-paw-factory",
+        "districtId": "district-3",
+        "position": 1,
+        "name": "Салон месье Пьера",
+        "moduleId": "pending",
+        "provisional": true
+      }
+    },
+    {
+      "id": "nuzhnoe",
+      "name": "NUZHNOE",
+      "mascot": "Мистер Нужный",
+      "archetype": "Привлекательный мужчина в эстетике романтической визуальной новеллы",
+      "personality": "Уверенный, внимательный, загадочный, слегка флиртующий",
+      "worldRole": "Романтические сюжетные линии, персональные поручения",
+      "theme": "Мистер Нужный в разных архетипах “краша”",
+      "sourceRef": "Персонажи!A12:F12",
+      "building": {
+        "id": "building-nuzhnoe",
+        "districtId": "district-3",
+        "position": 3,
+        "name": "Готический особняк",
+        "moduleId": "pending",
+        "provisional": true
+      }
+    },
+    {
+      "id": "toutes-peaux",
+      "name": "toutes peaux",
+      "mascot": "Мадам Пью",
+      "archetype": "Элегантная французская дама",
+      "personality": "Изысканная, немного снобистская, эстет, ценительница ухода",
+      "worldRole": "Уход за кожей, салон красоты",
+      "theme": "Effortless beauty / французские beauty-атрибуты",
+      "sourceRef": "Персонажи!A13:F13",
+      "building": {
+        "id": "building-toutes-peaux",
+        "districtId": "district-1",
+        "position": 2,
+        "name": "Французский дом Мадам Пью",
+        "moduleId": "pending",
+        "provisional": true
+      }
+    },
+    {
+      "id": "hobbylab",
+      "name": "ХОББИЛАБ",
+      "mascot": "Клякса",
+      "archetype": "Студентка художественного вуза",
+      "personality": "Мечтательная, рассеянная, талантливая, обожает неоновую косметику и творчество",
+      "worldRole": "Арт-мастерская, DIY, экспериментальный макияж",
+      "theme": "различные элементы творчества",
+      "sourceRef": "Персонажи!A14:F14",
+      "building": {
+        "id": "building-hobbylab",
+        "districtId": "district-3",
+        "position": 0,
+        "name": "Мастерская Кляксы",
+        "moduleId": "pending",
+        "provisional": true
+      }
+    },
+    {
+      "id": "mymania",
+      "name": "MyMania",
+      "mascot": "Мания",
+      "archetype": "Молодая женщина в панк-гранжевой эстетике",
+      "personality": "Дерзкая, эпатажная, независимая, любит провокационные образы",
+      "worldRole": "Мода, яркий макияж, кастомизация",
+      "theme": "Панк-элементы / рок-глам аксессуары",
+      "sourceRef": "Персонажи!A15:F15",
+      "building": {
+        "id": "building-mymania",
+        "districtId": "district-3",
+        "position": 2,
+        "name": "Панк-арена Мании",
+        "moduleId": "pending",
+        "provisional": true
+      }
+    },
+    {
+      "id": "koyo",
+      "name": "Koyo",
+      "mascot": "Тануки Коё",
+      "archetype": "Антропоморфный японский тануки",
+      "personality": "Спокойный, дисциплинированный, немногословный, любит гармонию",
+      "worldRole": "Домашний порядок, японская эстетика",
+      "theme": "Японские атрибуты",
+      "sourceRef": "Персонажи!A16:F16",
+      "building": {
+        "id": "building-koyo",
+        "districtId": "district-1",
+        "position": 3,
+        "name": "Японский дом Коё",
+        "moduleId": "pending",
+        "provisional": true
+      }
+    },
+    {
+      "id": "pole-yagoda",
+      "name": "Поле Ягода",
+      "mascot": "Яна Поляна",
+      "archetype": "Красивая зрелая травница, 40–45 лет",
+      "personality": "Уверенная, заботливая, мудрая, принимает свой возраст, знает растения",
+      "worldRole": "Ботаническая косметика, сад, оранжерея",
+      "theme": "Разные семена для выращивания на верме",
+      "sourceRef": "Персонажи!A17:F17",
+      "building": {
+        "id": "building-pole-yagoda",
+        "districtId": "district-4",
+        "position": 0,
+        "name": "Дом травницы Яны",
+        "moduleId": "pending",
+        "provisional": true
+      }
+    }
+  ],
+  "designs": [
+    {
+      "id": "meiku-neko-01",
+      "brandId": "meiku-neko",
+      "slot": 1,
+      "name": "Вампир",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "meiku-neko-02",
+      "brandId": "meiku-neko",
+      "slot": 2,
+      "name": "Зомби",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "meiku-neko-03",
+      "brandId": "meiku-neko",
+      "slot": 3,
+      "name": "Гуль",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "meiku-neko-04",
+      "brandId": "meiku-neko",
+      "slot": 4,
+      "name": "Школьница",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "meiku-neko-05",
+      "brandId": "meiku-neko",
+      "slot": 5,
+      "name": "волшебница",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "meiku-neko-06",
+      "brandId": "meiku-neko",
+      "slot": 6,
+      "name": "онсен",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "meiku-neko-07",
+      "brandId": "meiku-neko",
+      "slot": 7,
+      "name": "самурай",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "meiku-neko-08",
+      "brandId": "meiku-neko",
+      "slot": 8,
+      "name": "юката",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "meiku-neko-09",
+      "brandId": "meiku-neko",
+      "slot": 9,
+      "name": "художник",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "meiku-neko-10",
+      "brandId": "meiku-neko",
+      "slot": 10,
+      "name": "хикка",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "meiku-neko-11",
+      "brandId": "meiku-neko",
+      "slot": 11,
+      "name": "спа",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "meiku-neko-12",
+      "brandId": "meiku-neko",
+      "slot": 12,
+      "name": "лягушка",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "meiku-neko-13",
+      "brandId": "meiku-neko",
+      "slot": 13,
+      "name": "мацури",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "meiku-neko-14",
+      "brandId": "meiku-neko",
+      "slot": 14,
+      "name": "йокай",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "meiku-neko-15",
+      "brandId": "meiku-neko",
+      "slot": 15,
+      "name": "ниндзя",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "meiku-neko-16",
+      "brandId": "meiku-neko",
+      "slot": 16,
+      "name": "соня",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "klimych-01",
+      "brandId": "klimych",
+      "slot": 1,
+      "name": "Молоток",
+      "image": "/assets/klimych/tools/01.png",
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "klimych-02",
+      "brandId": "klimych",
+      "slot": 2,
+      "name": "Разводной ключ",
+      "image": "/assets/klimych/tools/02.png",
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "klimych-03",
+      "brandId": "klimych",
+      "slot": 3,
+      "name": "Шуруповёрт",
+      "image": "/assets/klimych/tools/03.png",
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "klimych-04",
+      "brandId": "klimych",
+      "slot": 4,
+      "name": "Пассатижи",
+      "image": "/assets/klimych/tools/04.png",
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "klimych-05",
+      "brandId": "klimych",
+      "slot": 5,
+      "name": "Отвёртка",
+      "image": "/assets/klimych/tools/05.png",
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "klimych-06",
+      "brandId": "klimych",
+      "slot": 6,
+      "name": "Рулетка",
+      "image": "/assets/klimych/tools/06.png",
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "klimych-07",
+      "brandId": "klimych",
+      "slot": 7,
+      "name": "Дрель",
+      "image": "/assets/klimych/tools/07.png",
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "klimych-08",
+      "brandId": "klimych",
+      "slot": 8,
+      "name": "Топор",
+      "image": "/assets/klimych/tools/08.png",
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "klimych-09",
+      "brandId": "klimych",
+      "slot": 9,
+      "name": "Вантуз",
+      "image": "/assets/klimych/tools/09.png",
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "klimych-10",
+      "brandId": "klimych",
+      "slot": 10,
+      "name": "Ножовка",
+      "image": "/assets/klimych/tools/10.png",
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "klimych-11",
+      "brandId": "klimych",
+      "slot": 11,
+      "name": "Паяльник",
+      "image": "/assets/klimych/tools/11.png",
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "klimych-12",
+      "brandId": "klimych",
+      "slot": 12,
+      "name": "Строительный уровень",
+      "image": "/assets/klimych/tools/12.png",
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "klimych-13",
+      "brandId": "klimych",
+      "slot": 13,
+      "name": "Струбцина",
+      "image": "/assets/klimych/tools/13.png",
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "klimych-14",
+      "brandId": "klimych",
+      "slot": 14,
+      "name": "Сантехнический ключ",
+      "image": "/assets/klimych/tools/14.png",
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "klimych-15",
+      "brandId": "klimych",
+      "slot": 15,
+      "name": "Киянка",
+      "image": "/assets/klimych/tools/15.png",
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "klimych-16",
+      "brandId": "klimych",
+      "slot": 16,
+      "name": "Ящик с инструментами",
+      "image": "/assets/klimych/tools/16.png",
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "ouborka-01",
+      "brandId": "ouborka",
+      "slot": 1,
+      "name": "ПOU!зырь-куб",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "ouborka-02",
+      "brandId": "ouborka",
+      "slot": 2,
+      "name": "ПOU!зырь-сердце",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "ouborka-03",
+      "brandId": "ouborka",
+      "slot": 3,
+      "name": "ПOU!зырь-пружина",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "ouborka-04",
+      "brandId": "ouborka",
+      "slot": 4,
+      "name": "ПOU!зырь-ракета",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "ouborka-05",
+      "brandId": "ouborka",
+      "slot": 5,
+      "name": "ПOU!зырь-бублик",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "ouborka-06",
+      "brandId": "ouborka",
+      "slot": 6,
+      "name": "ПOU!зырь-шарик-антистресс",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "ouborka-07",
+      "brandId": "ouborka",
+      "slot": 7,
+      "name": "ПOU!зырь-капля",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "ouborka-08",
+      "brandId": "ouborka",
+      "slot": 8,
+      "name": "ПOU!зырь-звезда",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "ouborka-09",
+      "brandId": "ouborka",
+      "slot": 9,
+      "name": "ПOU!зырь-облако",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "ouborka-10",
+      "brandId": "ouborka",
+      "slot": 10,
+      "name": "ПOU!зырь-медуза",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "ouborka-11",
+      "brandId": "ouborka",
+      "slot": 11,
+      "name": "ПOU!зырь-торнадо",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "ouborka-12",
+      "brandId": "ouborka",
+      "slot": 12,
+      "name": "ПOU!зырь-магнит",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "ouborka-13",
+      "brandId": "ouborka",
+      "slot": 13,
+      "name": "ПOU!зырь-осьминог",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "ouborka-14",
+      "brandId": "ouborka",
+      "slot": 14,
+      "name": "ПOU!зырь-диско-шар",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "ouborka-15",
+      "brandId": "ouborka",
+      "slot": 15,
+      "name": "ПOU!зырь-вулкан",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "ouborka-16",
+      "brandId": "ouborka",
+      "slot": 16,
+      "name": "Мега-ПOU!зырь",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "petpower-01",
+      "brandId": "petpower",
+      "slot": 1,
+      "name": "Теннисный мяч",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "petpower-02",
+      "brandId": "petpower",
+      "slot": 2,
+      "name": "Красный фрисби",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "petpower-03",
+      "brandId": "petpower",
+      "slot": 3,
+      "name": "Канат с узлами",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "petpower-04",
+      "brandId": "petpower",
+      "slot": 4,
+      "name": "Резиновая косточка",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "petpower-05",
+      "brandId": "petpower",
+      "slot": 5,
+      "name": "Плюшевый заяц",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "petpower-06",
+      "brandId": "petpower",
+      "slot": 6,
+      "name": "Мяч с шипами",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "petpower-07",
+      "brandId": "petpower",
+      "slot": 7,
+      "name": "Пищащая курица",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "petpower-08",
+      "brandId": "petpower",
+      "slot": 8,
+      "name": "Игрушка-морковка",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "petpower-09",
+      "brandId": "petpower",
+      "slot": 9,
+      "name": "Плюшевый банан",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "petpower-10",
+      "brandId": "petpower",
+      "slot": 10,
+      "name": "Резиновая уточка",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "petpower-11",
+      "brandId": "petpower",
+      "slot": 11,
+      "name": "Летающее кольцо",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "petpower-12",
+      "brandId": "petpower",
+      "slot": 12,
+      "name": "Пищащий крокодил",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "petpower-13",
+      "brandId": "petpower",
+      "slot": 13,
+      "name": "Игрушка-пицца",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "petpower-14",
+      "brandId": "petpower",
+      "slot": 14,
+      "name": "Мяч с лакомствами",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "petpower-15",
+      "brandId": "petpower",
+      "slot": 15,
+      "name": "Плюшевый осьминог",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "petpower-16",
+      "brandId": "petpower",
+      "slot": 16,
+      "name": "Огромная золотая косточка",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "multizavrik-01",
+      "brandId": "multizavrik",
+      "slot": 1,
+      "name": "Тираннозавр",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "multizavrik-02",
+      "brandId": "multizavrik",
+      "slot": 2,
+      "name": "Трицератопс",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "multizavrik-03",
+      "brandId": "multizavrik",
+      "slot": 3,
+      "name": "Стегозавр",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "multizavrik-04",
+      "brandId": "multizavrik",
+      "slot": 4,
+      "name": "Брахиозавр",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "multizavrik-05",
+      "brandId": "multizavrik",
+      "slot": 5,
+      "name": "Велоцираптор",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "multizavrik-06",
+      "brandId": "multizavrik",
+      "slot": 6,
+      "name": "Спинозавр",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "multizavrik-07",
+      "brandId": "multizavrik",
+      "slot": 7,
+      "name": "Птеродактиль",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "multizavrik-08",
+      "brandId": "multizavrik",
+      "slot": 8,
+      "name": "Плезиозавр",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "multizavrik-09",
+      "brandId": "multizavrik",
+      "slot": 9,
+      "name": "Анкилозавр",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "multizavrik-10",
+      "brandId": "multizavrik",
+      "slot": 10,
+      "name": "Паразавролоф",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "multizavrik-11",
+      "brandId": "multizavrik",
+      "slot": 11,
+      "name": "Игуанодон",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "multizavrik-12",
+      "brandId": "multizavrik",
+      "slot": 12,
+      "name": "Диплодок",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "multizavrik-13",
+      "brandId": "multizavrik",
+      "slot": 13,
+      "name": "Пахицефалозавр",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "multizavrik-14",
+      "brandId": "multizavrik",
+      "slot": 14,
+      "name": "Карнотавр",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "multizavrik-15",
+      "brandId": "multizavrik",
+      "slot": 15,
+      "name": "Дилофозавр",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "multizavrik-16",
+      "brandId": "multizavrik",
+      "slot": 16,
+      "name": "Аргентинозавр",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "walnut-01",
+      "brandId": "walnut",
+      "slot": 1,
+      "name": "Венский стул",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "walnut-02",
+      "brandId": "walnut",
+      "slot": 2,
+      "name": "Старый комод",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "walnut-03",
+      "brandId": "walnut",
+      "slot": 3,
+      "name": "Радиоприёмник",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "walnut-04",
+      "brandId": "walnut",
+      "slot": 4,
+      "name": "Граммофон",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "walnut-05",
+      "brandId": "walnut",
+      "slot": 5,
+      "name": "Деревянный сундук",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "walnut-06",
+      "brandId": "walnut",
+      "slot": 6,
+      "name": "Ретро-велосипед",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "walnut-07",
+      "brandId": "walnut",
+      "slot": 7,
+      "name": "Зеркало в резной раме",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "walnut-08",
+      "brandId": "walnut",
+      "slot": 8,
+      "name": "Чемодан путешественника",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "walnut-09",
+      "brandId": "walnut",
+      "slot": 9,
+      "name": "Деревянный глобус",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "walnut-10",
+      "brandId": "walnut",
+      "slot": 10,
+      "name": "Винтажная лампа",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "walnut-11",
+      "brandId": "walnut",
+      "slot": 11,
+      "name": "Шкатулка с резьбой",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "walnut-12",
+      "brandId": "walnut",
+      "slot": 12,
+      "name": "Старинные часы",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "walnut-13",
+      "brandId": "walnut",
+      "slot": 13,
+      "name": "Кресло-качалка",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "walnut-14",
+      "brandId": "walnut",
+      "slot": 14,
+      "name": "Печатная машинка",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "walnut-15",
+      "brandId": "walnut",
+      "slot": 15,
+      "name": "Деревянный сервант",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "walnut-16",
+      "brandId": "walnut",
+      "slot": 16,
+      "name": "Ретро-мотоцикл",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "rastvor-01",
+      "brandId": "rastvor",
+      "slot": 1,
+      "name": "Часы с лазером",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "rastvor-02",
+      "brandId": "rastvor",
+      "slot": 2,
+      "name": "Ручка-шпион",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "rastvor-03",
+      "brandId": "rastvor",
+      "slot": 3,
+      "name": "Скрытая камера",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "rastvor-04",
+      "brandId": "rastvor",
+      "slot": 4,
+      "name": "Очки ночного видения",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "rastvor-05",
+      "brandId": "rastvor",
+      "slot": 5,
+      "name": "Устройство взлома замков",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "rastvor-06",
+      "brandId": "rastvor",
+      "slot": 6,
+      "name": "Подслушивающий жучок",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "rastvor-07",
+      "brandId": "rastvor",
+      "slot": 7,
+      "name": "Чемодан с секретом",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "rastvor-08",
+      "brandId": "rastvor",
+      "slot": 8,
+      "name": "УФ-фонарик",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "rastvor-09",
+      "brandId": "rastvor",
+      "slot": 9,
+      "name": "Детектор прослушки",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "rastvor-10",
+      "brandId": "rastvor",
+      "slot": 10,
+      "name": "Миниатюрный дрон",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "rastvor-11",
+      "brandId": "rastvor",
+      "slot": 11,
+      "name": "Голографический проектор",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "rastvor-12",
+      "brandId": "rastvor",
+      "slot": 12,
+      "name": "Диктофон в запонке",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "rastvor-13",
+      "brandId": "rastvor",
+      "slot": 13,
+      "name": "Сканер отпечатков",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "rastvor-14",
+      "brandId": "rastvor",
+      "slot": 14,
+      "name": "Микрокамера-пуговица",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "rastvor-15",
+      "brandId": "rastvor",
+      "slot": 15,
+      "name": "Спутниковый коммуникатор",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "rastvor-16",
+      "brandId": "rastvor",
+      "slot": 16,
+      "name": "Астон мартин джеймса-бонда",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "generalim-01",
+      "brandId": "generalim",
+      "slot": 1,
+      "name": "Робот-пылесос",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "generalim-02",
+      "brandId": "generalim",
+      "slot": 2,
+      "name": "Робот-мойщик окон",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "generalim-03",
+      "brandId": "generalim",
+      "slot": 3,
+      "name": "Робот-сортировщик",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "generalim-04",
+      "brandId": "generalim",
+      "slot": 4,
+      "name": "Робот-прачка",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "generalim-05",
+      "brandId": "generalim",
+      "slot": 5,
+      "name": "Робот-повар",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "generalim-06",
+      "brandId": "generalim",
+      "slot": 6,
+      "name": "Робот-гладильщик",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "generalim-07",
+      "brandId": "generalim",
+      "slot": 7,
+      "name": "Робот-мусорщик",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "generalim-08",
+      "brandId": "generalim",
+      "slot": 8,
+      "name": "Робот-протирщик пыли",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "generalim-09",
+      "brandId": "generalim",
+      "slot": 9,
+      "name": "Робот-полировщик",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "generalim-10",
+      "brandId": "generalim",
+      "slot": 10,
+      "name": "Робот-дезинфектор",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "generalim-11",
+      "brandId": "generalim",
+      "slot": 11,
+      "name": "Робот-садовник",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "generalim-12",
+      "brandId": "generalim",
+      "slot": 12,
+      "name": "Робот-курьер",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "generalim-13",
+      "brandId": "generalim",
+      "slot": 13,
+      "name": "Робот-охранник",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "generalim-14",
+      "brandId": "generalim",
+      "slot": 14,
+      "name": "Робот-органайзер",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "generalim-15",
+      "brandId": "generalim",
+      "slot": 15,
+      "name": "Робот-ремонтник",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "generalim-16",
+      "brandId": "generalim",
+      "slot": 16,
+      "name": "Супербот-управляющий",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "yesmix-01",
+      "brandId": "yesmix",
+      "slot": 1,
+      "name": "Клубника в шоколаде",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "yesmix-02",
+      "brandId": "yesmix",
+      "slot": 2,
+      "name": "Макарон",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "yesmix-03",
+      "brandId": "yesmix",
+      "slot": 3,
+      "name": "Тирамису",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "yesmix-04",
+      "brandId": "yesmix",
+      "slot": 4,
+      "name": "Эклер",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "yesmix-05",
+      "brandId": "yesmix",
+      "slot": 5,
+      "name": "Донат с глазурью",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "yesmix-06",
+      "brandId": "yesmix",
+      "slot": 6,
+      "name": "Мороженое в рожке",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "yesmix-07",
+      "brandId": "yesmix",
+      "slot": 7,
+      "name": "Капкейк",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "yesmix-08",
+      "brandId": "yesmix",
+      "slot": 8,
+      "name": "Малиновая панна-котта",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "yesmix-09",
+      "brandId": "yesmix",
+      "slot": 9,
+      "name": "Клубничный чизкейк",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "yesmix-10",
+      "brandId": "yesmix",
+      "slot": 10,
+      "name": "Профитроли",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "yesmix-11",
+      "brandId": "yesmix",
+      "slot": 11,
+      "name": "Шоколадный фондан",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "yesmix-12",
+      "brandId": "yesmix",
+      "slot": 12,
+      "name": "Ягодный трайфл",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "yesmix-13",
+      "brandId": "yesmix",
+      "slot": 13,
+      "name": "Фруктовый тарт",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "yesmix-14",
+      "brandId": "yesmix",
+      "slot": 14,
+      "name": "Моти",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "yesmix-15",
+      "brandId": "yesmix",
+      "slot": 15,
+      "name": "Банановый сплит",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "yesmix-16",
+      "brandId": "yesmix",
+      "slot": 16,
+      "name": "Огромный праздничный торт",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "paw-factory-01",
+      "brandId": "paw-factory",
+      "slot": 1,
+      "name": "Золотые парикмахерские ножницы",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "paw-factory-02",
+      "brandId": "paw-factory",
+      "slot": 2,
+      "name": "Винтажная расчёска",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "paw-factory-03",
+      "brandId": "paw-factory",
+      "slot": 3,
+      "name": "Ручное зеркало",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "paw-factory-04",
+      "brandId": "paw-factory",
+      "slot": 4,
+      "name": "Дизайнерский фен",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "paw-factory-05",
+      "brandId": "paw-factory",
+      "slot": 5,
+      "name": "Кисть для масок",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "paw-factory-06",
+      "brandId": "paw-factory",
+      "slot": 6,
+      "name": "Пульверизатор",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "paw-factory-07",
+      "brandId": "paw-factory",
+      "slot": 7,
+      "name": "Флакон масла для волос",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "paw-factory-08",
+      "brandId": "paw-factory",
+      "slot": 8,
+      "name": "Баночка премиального крема",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "paw-factory-09",
+      "brandId": "paw-factory",
+      "slot": 9,
+      "name": "Флакон парфюма",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "paw-factory-10",
+      "brandId": "paw-factory",
+      "slot": 10,
+      "name": "Профессиональная щётка",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "paw-factory-11",
+      "brandId": "paw-factory",
+      "slot": 11,
+      "name": "Массажный роллер",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "paw-factory-12",
+      "brandId": "paw-factory",
+      "slot": 12,
+      "name": "Шёлковая лента",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "paw-factory-13",
+      "brandId": "paw-factory",
+      "slot": 13,
+      "name": "Флакон сыворотки",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "paw-factory-14",
+      "brandId": "paw-factory",
+      "slot": 14,
+      "name": "Элегантная заколка",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "paw-factory-15",
+      "brandId": "paw-factory",
+      "slot": 15,
+      "name": "Салонная накидка",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "paw-factory-16",
+      "brandId": "paw-factory",
+      "slot": 16,
+      "name": "Королевское зеркало Пьера",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "nuzhnoe-01",
+      "brandId": "nuzhnoe",
+      "slot": 1,
+      "name": "Загадочный вампир",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "nuzhnoe-02",
+      "brandId": "nuzhnoe",
+      "slot": 2,
+      "name": "Кумир поп-сцены",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "nuzhnoe-03",
+      "brandId": "nuzhnoe",
+      "slot": 3,
+      "name": "Лунный танцор",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "nuzhnoe-04",
+      "brandId": "nuzhnoe",
+      "slot": 4,
+      "name": "Гонщик",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "nuzhnoe-05",
+      "brandId": "nuzhnoe",
+      "slot": 5,
+      "name": "Прекрасный принц",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "nuzhnoe-06",
+      "brandId": "nuzhnoe",
+      "slot": 6,
+      "name": "Плохой парень",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "nuzhnoe-07",
+      "brandId": "nuzhnoe",
+      "slot": 7,
+      "name": "Секретный агент",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "nuzhnoe-08",
+      "brandId": "nuzhnoe",
+      "slot": 8,
+      "name": "Романтичный художник",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "nuzhnoe-09",
+      "brandId": "nuzhnoe",
+      "slot": 9,
+      "name": "Рок-звезда",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "nuzhnoe-10",
+      "brandId": "nuzhnoe",
+      "slot": 10,
+      "name": "Байкер-бунтарь",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "nuzhnoe-11",
+      "brandId": "nuzhnoe",
+      "slot": 11,
+      "name": "Готический аристократ",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "nuzhnoe-12",
+      "brandId": "nuzhnoe",
+      "slot": 12,
+      "name": "Ковбой",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "nuzhnoe-13",
+      "brandId": "nuzhnoe",
+      "slot": 13,
+      "name": "Молодой профессор",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "nuzhnoe-14",
+      "brandId": "nuzhnoe",
+      "slot": 14,
+      "name": "Харизматичный бармен",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "nuzhnoe-15",
+      "brandId": "nuzhnoe",
+      "slot": 15,
+      "name": "Капитан корабля",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "nuzhnoe-16",
+      "brandId": "nuzhnoe",
+      "slot": 16,
+      "name": "Король выпускного бала",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "toutes-peaux-01",
+      "brandId": "toutes-peaux",
+      "slot": 1,
+      "name": "Косметичка",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "toutes-peaux-02",
+      "brandId": "toutes-peaux",
+      "slot": 2,
+      "name": "Солнцезащитные очки",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "toutes-peaux-03",
+      "brandId": "toutes-peaux",
+      "slot": 3,
+      "name": "Повязка для волос",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "toutes-peaux-04",
+      "brandId": "toutes-peaux",
+      "slot": 4,
+      "name": "Шёлковая маска для сна",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "toutes-peaux-05",
+      "brandId": "toutes-peaux",
+      "slot": 5,
+      "name": "Мини-букет цветов",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "toutes-peaux-06",
+      "brandId": "toutes-peaux",
+      "slot": 6,
+      "name": "Керамическая ванночка",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "toutes-peaux-07",
+      "brandId": "toutes-peaux",
+      "slot": 7,
+      "name": "Элегантная пижама",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "toutes-peaux-08",
+      "brandId": "toutes-peaux",
+      "slot": 8,
+      "name": "Крем для рук",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "toutes-peaux-09",
+      "brandId": "toutes-peaux",
+      "slot": 9,
+      "name": "Льняной халат",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "toutes-peaux-10",
+      "brandId": "toutes-peaux",
+      "slot": 10,
+      "name": "Мягкая подушка",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "toutes-peaux-11",
+      "brandId": "toutes-peaux",
+      "slot": 11,
+      "name": "Ароматическая свеча",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "toutes-peaux-12",
+      "brandId": "toutes-peaux",
+      "slot": 12,
+      "name": "Кружка травяного чая",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "toutes-peaux-13",
+      "brandId": "toutes-peaux",
+      "slot": 13,
+      "name": "Банное полотенце",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "toutes-peaux-14",
+      "brandId": "toutes-peaux",
+      "slot": 14,
+      "name": "Заколка-краб",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "toutes-peaux-15",
+      "brandId": "toutes-peaux",
+      "slot": 15,
+      "name": "Шёлковый платок",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "toutes-peaux-16",
+      "brandId": "toutes-peaux",
+      "slot": 16,
+      "name": "Винтажный туалетный столик",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "hobbylab-01",
+      "brandId": "hobbylab",
+      "slot": 1,
+      "name": "Палитра с красками",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "hobbylab-02",
+      "brandId": "hobbylab",
+      "slot": 2,
+      "name": "Кисточка с цветной краской",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "hobbylab-03",
+      "brandId": "hobbylab",
+      "slot": 3,
+      "name": "Скетчбук",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "hobbylab-04",
+      "brandId": "hobbylab",
+      "slot": 4,
+      "name": "Набор маркеров",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "hobbylab-05",
+      "brandId": "hobbylab",
+      "slot": 5,
+      "name": "Гуашевые пятна",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "hobbylab-06",
+      "brandId": "hobbylab",
+      "slot": 6,
+      "name": "Рулон декоративного скотча",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "hobbylab-07",
+      "brandId": "hobbylab",
+      "slot": 7,
+      "name": "Ножницы для скрапбукинга",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "hobbylab-08",
+      "brandId": "hobbylab",
+      "slot": 8,
+      "name": "Пастельные мелки",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "hobbylab-09",
+      "brandId": "hobbylab",
+      "slot": 9,
+      "name": "Набор цветных карандашей",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "hobbylab-10",
+      "brandId": "hobbylab",
+      "slot": 10,
+      "name": "Глиттер в баночке",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "hobbylab-11",
+      "brandId": "hobbylab",
+      "slot": 11,
+      "name": "Тюбик акриловой краски",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "hobbylab-12",
+      "brandId": "hobbylab",
+      "slot": 12,
+      "name": "Клеевой пистолет",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "hobbylab-13",
+      "brandId": "hobbylab",
+      "slot": 13,
+      "name": "Моток разноцветной пряжи",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "hobbylab-14",
+      "brandId": "hobbylab",
+      "slot": 14,
+      "name": "Баночка с бисером",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "hobbylab-15",
+      "brandId": "hobbylab",
+      "slot": 15,
+      "name": "Клякса в форме сердца",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "hobbylab-16",
+      "brandId": "hobbylab",
+      "slot": 16,
+      "name": "Волшебный художественный чемоданчик",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "mymania-01",
+      "brandId": "mymania",
+      "slot": 1,
+      "name": "Красная электрогитара",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "mymania-02",
+      "brandId": "mymania",
+      "slot": 2,
+      "name": "Шипованный чокер",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "mymania-03",
+      "brandId": "mymania",
+      "slot": 3,
+      "name": "Металлическая цепь",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "mymania-04",
+      "brandId": "mymania",
+      "slot": 4,
+      "name": "Косуха с заклёпками",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "mymania-05",
+      "brandId": "mymania",
+      "slot": 5,
+      "name": "Английская булавка",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "mymania-06",
+      "brandId": "mymania",
+      "slot": 6,
+      "name": "Ботинки на платформе",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "mymania-07",
+      "brandId": "mymania",
+      "slot": 7,
+      "name": "Череп с красным ирокезом",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "mymania-08",
+      "brandId": "mymania",
+      "slot": 8,
+      "name": "Помада с чёрным футляром",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "mymania-09",
+      "brandId": "mymania",
+      "slot": 9,
+      "name": "Кассета с рок-записью",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "mymania-10",
+      "brandId": "mymania",
+      "slot": 10,
+      "name": "Сетчатые перчатки",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "mymania-11",
+      "brandId": "mymania",
+      "slot": 11,
+      "name": "Микрофон с проводом",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "mymania-12",
+      "brandId": "mymania",
+      "slot": 12,
+      "name": "Нашивка с молнией",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "mymania-13",
+      "brandId": "mymania",
+      "slot": 13,
+      "name": "Панк-очки",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "mymania-14",
+      "brandId": "mymania",
+      "slot": 14,
+      "name": "Сердце в колючей проволоке",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "mymania-15",
+      "brandId": "mymania",
+      "slot": 15,
+      "name": "Барабанные палочки",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "mymania-16",
+      "brandId": "mymania",
+      "slot": 16,
+      "name": "Пылающая эмблема MyMania",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "koyo-01",
+      "brandId": "koyo",
+      "slot": 1,
+      "name": "Дарума",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "koyo-02",
+      "brandId": "koyo",
+      "slot": 2,
+      "name": "Японский бумажный фонарь",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "koyo-03",
+      "brandId": "koyo",
+      "slot": 3,
+      "name": "Веер с сакурой",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "koyo-04",
+      "brandId": "koyo",
+      "slot": 4,
+      "name": "Манэки-нэко",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "koyo-05",
+      "brandId": "koyo",
+      "slot": 5,
+      "name": "Онигири",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "koyo-06",
+      "brandId": "koyo",
+      "slot": 6,
+      "name": "Красные ворота тории",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "koyo-07",
+      "brandId": "koyo",
+      "slot": 7,
+      "name": "Маска кицунэ",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "koyo-08",
+      "brandId": "koyo",
+      "slot": 8,
+      "name": "Чашка матча",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "koyo-09",
+      "brandId": "koyo",
+      "slot": 9,
+      "name": "Котaцу",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "koyo-10",
+      "brandId": "koyo",
+      "slot": 10,
+      "name": "Бамбуковый венчик для матча",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "koyo-11",
+      "brandId": "koyo",
+      "slot": 11,
+      "name": "Керамический чайник кюсу",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "koyo-12",
+      "brandId": "koyo",
+      "slot": 12,
+      "name": "Норэн — тканевая занавесь",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "koyo-13",
+      "brandId": "koyo",
+      "slot": 13,
+      "name": "Кукла кокэси",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "koyo-14",
+      "brandId": "koyo",
+      "slot": 14,
+      "name": "Фурин — ветровой колокольчик",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "koyo-15",
+      "brandId": "koyo",
+      "slot": 15,
+      "name": "Японский зонтик вагаса",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "koyo-16",
+      "brandId": "koyo",
+      "slot": 16,
+      "name": "Миниатюрная пагода",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "pole-yagoda-01",
+      "brandId": "pole-yagoda",
+      "slot": 1,
+      "name": "Малина",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "pole-yagoda-02",
+      "brandId": "pole-yagoda",
+      "slot": 2,
+      "name": "Клубника",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "pole-yagoda-03",
+      "brandId": "pole-yagoda",
+      "slot": 3,
+      "name": "Черника",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "pole-yagoda-04",
+      "brandId": "pole-yagoda",
+      "slot": 4,
+      "name": "Ежевика",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "pole-yagoda-05",
+      "brandId": "pole-yagoda",
+      "slot": 5,
+      "name": "Смородина",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "pole-yagoda-06",
+      "brandId": "pole-yagoda",
+      "slot": 6,
+      "name": "Облепиха",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "pole-yagoda-07",
+      "brandId": "pole-yagoda",
+      "slot": 7,
+      "name": "Шиповник",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "pole-yagoda-08",
+      "brandId": "pole-yagoda",
+      "slot": 8,
+      "name": "Крыжовник",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "pole-yagoda-09",
+      "brandId": "pole-yagoda",
+      "slot": 9,
+      "name": "Лаванда",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "pole-yagoda-10",
+      "brandId": "pole-yagoda",
+      "slot": 10,
+      "name": "Мята",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "pole-yagoda-11",
+      "brandId": "pole-yagoda",
+      "slot": 11,
+      "name": "Мелисса",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "pole-yagoda-12",
+      "brandId": "pole-yagoda",
+      "slot": 12,
+      "name": "Ромашка",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "pole-yagoda-13",
+      "brandId": "pole-yagoda",
+      "slot": 13,
+      "name": "Календула",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "pole-yagoda-14",
+      "brandId": "pole-yagoda",
+      "slot": 14,
+      "name": "Шалфей",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "pole-yagoda-15",
+      "brandId": "pole-yagoda",
+      "slot": 15,
+      "name": "Розмарин",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    },
+    {
+      "id": "pole-yagoda-16",
+      "brandId": "pole-yagoda",
+      "slot": 16,
+      "name": "Василёк",
+      "image": null,
+      "effect": {
+        "kind": "collect"
+      }
+    }
+  ]
+}

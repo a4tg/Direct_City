@@ -1,0 +1,410 @@
+{
+  "base": {
+    "url": "/assets/map/world-map.png",
+    "width": 941,
+    "height": 1672,
+    "sha256": "153b8947ec5f5063875e598d8d954f6428137c314559b3346aac786bec51df56"
+  },
+  "buildings": {
+    "1": {
+      "url": "/assets/map/building-01-77d682f3766b-trim2.webp",
+      "sourceFile": "01_meikuneko_house.png",
+      "sha256": "77d682f3766b8ddeed60590d9ea5b86485ce97dd3d437ef2d97b39cbf6ed7cd4",
+      "width": 1185,
+      "height": 1168,
+      "sourceWidth": 1312,
+      "sourceHeight": 1199,
+      "crop": [
+        87,
+        17,
+        1272,
+        1185
+      ],
+      "alphaBounds": [
+        97,
+        27,
+        1262,
+        1175
+      ],
+      "renderWidth": 768,
+      "renderHeight": 757,
+      "optimized": true,
+      "bytes": 170304
+    },
+    "2": {
+      "url": "/assets/map/building-02-c966b7308351-trim2.webp",
+      "sourceFile": "02_petpower_shelter.png",
+      "sha256": "c966b730835116bb4c94131352d154d35fe96cff7a7dd1764240872619846008",
+      "width": 1294,
+      "height": 1161,
+      "sourceWidth": 1312,
+      "sourceHeight": 1199,
+      "crop": [
+        14,
+        16,
+        1308,
+        1177
+      ],
+      "alphaBounds": [
+        24,
+        26,
+        1298,
+        1167
+      ],
+      "renderWidth": 768,
+      "renderHeight": 689,
+      "optimized": true,
+      "bytes": 169000
+    },
+    "3": {
+      "url": "/assets/map/building-03-045fdf30ff2b-trim2.webp",
+      "sourceFile": "03_toutespeaux_maison.png",
+      "sha256": "045fdf30ff2b7cfc5559dd62481f9378d1c54d9f02f475b8bd8a0741d6310563",
+      "width": 1196,
+      "height": 1242,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "crop": [
+        0,
+        12,
+        1196,
+        1254
+      ],
+      "alphaBounds": [
+        0,
+        22,
+        1186,
+        1254
+      ],
+      "renderWidth": 740,
+      "renderHeight": 768,
+      "optimized": true,
+      "bytes": 157224
+    },
+    "4": {
+      "url": "/assets/map/building-04-99ffeabe960c-trim2.webp",
+      "sourceFile": "04_koyo_house.png",
+      "sha256": "99ffeabe960c084b73497e5f2e7b44d95d4f4bf3ddf53c48a240f3ceab908bf7",
+      "width": 1232,
+      "height": 1225,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "crop": [
+        0,
+        29,
+        1232,
+        1254
+      ],
+      "alphaBounds": [
+        0,
+        39,
+        1222,
+        1254
+      ],
+      "renderWidth": 768,
+      "renderHeight": 764,
+      "optimized": true,
+      "bytes": 160140
+    },
+    "5": {
+      "url": "/assets/map/building-05-a97fa8fb9e24-trim2.webp",
+      "sourceFile": "05_klimych_workshop.png",
+      "sha256": "a97fa8fb9e24fe20e1f74cc861853b687967a2512464c7fc5fdb712a14353a28",
+      "width": 1390,
+      "height": 1012,
+      "sourceWidth": 1402,
+      "sourceHeight": 1122,
+      "crop": [
+        7,
+        58,
+        1397,
+        1070
+      ],
+      "alphaBounds": [
+        18,
+        69,
+        1386,
+        1059
+      ],
+      "renderWidth": 768,
+      "renderHeight": 559,
+      "optimized": true,
+      "bytes": 148880
+    },
+    "6": {
+      "url": "/assets/map/building-06-768233f97d28-trim2.webp",
+      "sourceFile": "06_walnut_restoration.png",
+      "sha256": "768233f97d28b0acfb5eeac4f4b56f4d9b5d4324c0713c24f7d3aea5ac5d879f",
+      "width": 1519,
+      "height": 947,
+      "sourceWidth": 1536,
+      "sourceHeight": 1024,
+      "crop": [
+        10,
+        54,
+        1529,
+        1001
+      ],
+      "alphaBounds": [
+        22,
+        66,
+        1517,
+        989
+      ],
+      "renderWidth": 768,
+      "renderHeight": 479,
+      "optimized": true,
+      "bytes": 150822
+    },
+    "7": {
+      "url": "/assets/map/building-07-d8f43f700ce5-trim2.webp",
+      "sourceFile": "07_ouborka_bottle_house.png",
+      "sha256": "d8f43f700ce5a1946e2859754c0469787537040d3c53a80ada9148caaf22cbc2",
+      "width": 1224,
+      "height": 1254,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "crop": [
+        0,
+        0,
+        1224,
+        1254
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1214,
+        1254
+      ],
+      "renderWidth": 750,
+      "renderHeight": 768,
+      "optimized": true,
+      "bytes": 120122
+    },
+    "8": {
+      "url": "/assets/map/building-08-091277f075d4-trim2.webp",
+      "sourceFile": "08_generalim_factory.png",
+      "sha256": "091277f075d45faaf0c1c76194e859f9054bfa2fcbd3410d30213eaaef89b3f9",
+      "width": 1536,
+      "height": 1010,
+      "sourceWidth": 1536,
+      "sourceHeight": 1024,
+      "crop": [
+        0,
+        0,
+        1536,
+        1010
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1525,
+        998
+      ],
+      "renderWidth": 768,
+      "renderHeight": 505,
+      "optimized": true,
+      "bytes": 116106
+    },
+    "9": {
+      "url": "/assets/map/building-09-bd2403055521-trim2.webp",
+      "sourceFile": "09_hobbylab_studio.png",
+      "sha256": "bd2403055521bfd1afe5a7791e14b5aa09e07bc21c67720eee0a8a85e59690be",
+      "width": 1457,
+      "height": 1024,
+      "sourceWidth": 1536,
+      "sourceHeight": 1024,
+      "crop": [
+        0,
+        0,
+        1457,
+        1024
+      ],
+      "alphaBounds": [
+        0,
+        9,
+        1445,
+        1024
+      ],
+      "renderWidth": 768,
+      "renderHeight": 540,
+      "optimized": true,
+      "bytes": 228544
+    },
+    "10": {
+      "url": "/assets/map/building-10-007ade8bf255-trim2.webp",
+      "sourceFile": "10_pawfactory_salon.png",
+      "sha256": "007ade8bf2558794e934ce66626d823e0294632802cb7a2adacb91b1b696d7aa",
+      "width": 1175,
+      "height": 1254,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "crop": [
+        37,
+        0,
+        1212,
+        1254
+      ],
+      "alphaBounds": [
+        47,
+        0,
+        1202,
+        1254
+      ],
+      "renderWidth": 720,
+      "renderHeight": 768,
+      "optimized": true,
+      "bytes": 200400
+    },
+    "11": {
+      "url": "/assets/map/building-11-20fdfefd9af0-trim2.webp",
+      "sourceFile": "11_mymania_punk_arena.png",
+      "sha256": "20fdfefd9af085181eb4320ff81487d675f1277818a44f599c2c99f1da0a2d2d",
+      "width": 1536,
+      "height": 1024,
+      "sourceWidth": 1536,
+      "sourceHeight": 1024,
+      "crop": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "renderWidth": 768,
+      "renderHeight": 512,
+      "optimized": true,
+      "bytes": 160646
+    },
+    "12": {
+      "url": "/assets/map/building-12-53bac1fa7c9f-trim2.webp",
+      "sourceFile": "12_nuzhnoe_mansion.png",
+      "sha256": "53bac1fa7c9f45a317bfa1e751108fff9e6af0ff3f6ffc92a479263c00347c6d",
+      "width": 1432,
+      "height": 1024,
+      "sourceWidth": 1536,
+      "sourceHeight": 1024,
+      "crop": [
+        0,
+        0,
+        1432,
+        1024
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1420,
+        1024
+      ],
+      "renderWidth": 768,
+      "renderHeight": 549,
+      "optimized": true,
+      "bytes": 146214
+    },
+    "13": {
+      "url": "/assets/map/building-13-f98db0c29bae-trim2.webp",
+      "sourceFile": "13_pole_yagoda_herbalist.png",
+      "sha256": "f98db0c29bae8248ca8c7e4358cf6a5651cb46e28d34ee7534595a59d52e0d76",
+      "width": 1419,
+      "height": 1022,
+      "sourceWidth": 1536,
+      "sourceHeight": 1024,
+      "crop": [
+        69,
+        0,
+        1488,
+        1022
+      ],
+      "alphaBounds": [
+        81,
+        0,
+        1476,
+        1010
+      ],
+      "renderWidth": 768,
+      "renderHeight": 553,
+      "optimized": true,
+      "bytes": 217414
+    },
+    "14": {
+      "url": "/assets/map/building-14-f5608a4f6071-trim2.webp",
+      "sourceFile": "14_multizavrik_playhouse.png",
+      "sha256": "f5608a4f607156f8ebfa3cec2e9217907cd6c9fd09e0cc90c6fa95de6c4e02bf",
+      "width": 1403,
+      "height": 1016,
+      "sourceWidth": 1536,
+      "sourceHeight": 1024,
+      "crop": [
+        69,
+        4,
+        1472,
+        1020
+      ],
+      "alphaBounds": [
+        81,
+        16,
+        1460,
+        1008
+      ],
+      "renderWidth": 768,
+      "renderHeight": 556,
+      "optimized": true,
+      "bytes": 85650
+    },
+    "15": {
+      "url": "/assets/map/building-15-ee75cf3180c0-trim2.webp",
+      "sourceFile": "15_yesmix_recipe_house.png",
+      "sha256": "ee75cf3180c0b8a728da8474e0bc0b7770872facf95334159344bb776a80b9c4",
+      "width": 1526,
+      "height": 1024,
+      "sourceWidth": 1536,
+      "sourceHeight": 1024,
+      "crop": [
+        0,
+        0,
+        1526,
+        1024
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1514,
+        1024
+      ],
+      "renderWidth": 768,
+      "renderHeight": 515,
+      "optimized": true,
+      "bytes": 116234
+    },
+    "16": {
+      "url": "/assets/map/building-16-95b8cfd0e0a2-trim2.webp",
+      "sourceFile": "16_rastvor_headquarters.png",
+      "sha256": "95b8cfd0e0a24e67827c7ae73d7f5c79d1db1df63eafe7a07564460c8de9c724",
+      "width": 1528,
+      "height": 1024,
+      "sourceWidth": 1536,
+      "sourceHeight": 1024,
+      "crop": [
+        0,
+        0,
+        1528,
+        1024
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1516,
+        1024
+      ],
+      "renderWidth": 768,
+      "renderHeight": 515,
+      "optimized": true,
+      "bytes": 80442
+    }
+  }
+}
